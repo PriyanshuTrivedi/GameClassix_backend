@@ -23,7 +23,7 @@ const SocketServer = Socket.Server;
 dbConnection();
 
 const backendPort = 5000;
-const frontend = "https://game-classix.netlify.app";
+const frontend = "https://gameclassix-frontend.onrender.com";
 
 // middlewares
 app.use(cors());

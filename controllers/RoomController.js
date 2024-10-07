@@ -45,7 +45,7 @@ RoomRouter.get("/canEnterRoom/:game/:roomId", (req, res) => {
           caseCode: 0,
         });
     }
-    if (roomPlayers[game][roomId].size === maxPlayersInGame[game]) {
+    if (roomPlayers[game][roomId].size > maxPlayersInGame[game]) {
       return res
         .status(200)
         .json({

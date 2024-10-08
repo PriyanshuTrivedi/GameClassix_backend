@@ -45,6 +45,7 @@ const io = new SocketServer(httpServer, {
   cors: {
     origin: frontend,
     methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
   },
 });
 
